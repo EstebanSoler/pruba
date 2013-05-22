@@ -1,0 +1,36 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body><div id="product_list">
+  <h1>Listing products</h1>
+
+  
+  &lt;% @products.each do |product| %&gt;
+    
+  &lt;% end %&gt;
+  <table><tbody><tr class="&lt;%= cycle('list_line_odd', 'list_line_even') %&gt;">
+
+      <td>
+        &lt;%= image_tag(product.image_url, :class =&gt; 'list_image') %&gt;
+      </td>
+
+      <td class="list_description">
+        <dl>
+          <dt>&lt;%= product.title %&gt;</dt>
+          <dd>&lt;%= truncate(strip_tags(product.description),
+                 :length =&gt; 80) %&gt;</dd>
+        </dl>
+      </td>
+
+      <td class="list_actions">
+        &lt;%= link_to 'Show', product %&gt;<br>
+        &lt;%= link_to 'Edit', edit_product_path(product) %&gt;<br>
+        &lt;%= link_to 'Destroy', product, 
+                    :confirm =&gt; 'Are you sure?',
+                    :method =&gt; :delete %&gt;
+      </td>
+    </tr></tbody></table>
+</div>
+
+<br>
+
+&lt;%= link_to 'New product', new_product_path %&gt;
+</body></html>
