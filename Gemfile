@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 
 
-group :test, :production do
+group :test, :development do
 	gem 'sqlite3'
 end
 
