@@ -19,7 +19,7 @@ test:
   timeout: 5000
 
 production:
-	adapter: postgesql
+	adapter: pg
 	encoding: utf8
 	reconnect: false
 	database: depot_production
