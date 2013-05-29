@@ -8,12 +8,13 @@ gem 'rails', '3.2.13'
 
 
 group :test, :development do
-	gem 'sqlite3'
+  gem 'sqlite3'
 end
 
 
 group :production do
   gem 'pg', '0.12.2'
+  gem 'mysql'
 end
 
 
@@ -44,7 +45,7 @@ gem 'will_paginate', '>= 3.0.pre'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'

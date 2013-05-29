@@ -19,12 +19,12 @@ test:
   timeout: 5000
 
 production:
-	adapter: postgesql
-	encoding: utf8
-	reconnect: false
-	database: depot_production
-	pool: 5
-	port: 3306
-	username: esteban
-	password: 123456
-	host: localhost
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: depot_production
+  pool: 5
+  port: 3306
+  username: esteban
+  password: 123456
+  host: localhost
