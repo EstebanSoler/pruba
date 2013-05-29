@@ -45,7 +45,7 @@ gem 'will_paginate', '>= 3.0.pre'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
+#gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
