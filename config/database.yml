@@ -19,12 +19,12 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql
+  adapter: postgresql
   encoding: utf8
   reconnect: false
   database: depot_production
   pool: 5
-  port: 3306
+  port: 5432
   username: esteban
   password: 123456
   host: localhost
