@@ -54,3 +54,9 @@ Product.create(:title => 'Rails Test Prescriptions',
   :image_url => '/images/rtp.jpg',
   :price => 43.75)
 
+User.create(:name => 'esteban',
+  :password =>'123456')
+
+User.create(:name => 'pepe',
+  :password =>'123456')
+
